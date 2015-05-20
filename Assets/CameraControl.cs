@@ -24,4 +24,20 @@ public class CameraControl : MonoBehaviour {
 	public void kneeLookBack () {
 		iTween.RotateBy(gameObject, iTween.Hash("x", -.25, "easeType", "easeInOutQuad"));
 	}
+
+	public void elbowLook () {
+		iTween.RotateBy(gameObject, iTween.Hash("x", -.25, "easeType", "easeInOutQuad"));
+	}
+	
+	public void elbowLookBack () {
+		iTween.RotateBy(gameObject, iTween.Hash("x", .25, "easeType", "easeInOutQuad"));
+	}
+
+	public void hipLook () {
+		iTween.RotateBy(gameObject, iTween.Hash("y", -.25, "easeType", "easeInOutQuad"));
+	}
+	
+	public void hipLookBack () {
+		iTween.RotateBy(gameObject, iTween.Hash("y", .25, "easeType", "easeInOutQuad"));
+	}
 }
